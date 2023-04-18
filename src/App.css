@@ -42,11 +42,15 @@ h1 {
   border-radius: 12px;
 }
 
-.item p {
+.item h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
 }
 
 .item span {
@@ -54,8 +58,22 @@ h1 {
   font-size: 12px;
   line-height: 16px;
   padding: 4px 8px;
-  background: #FCEEF5;
   border-radius: 5px;
+}
+
+.high {
+  background: #FCEEF5;
+  color: #571032;
+}
+
+.medium {
+  background: #EEF3FC;
+  color: #103D57;
+}
+
+.low {
+  background: #EFFCEE;
+  color: #14A35E;
 }
 
 .add__btn {
@@ -69,12 +87,42 @@ h1 {
 
 .item__actions {
   display: flex;
+  align-items: center;
   gap: 15px;
+}
+
+.item__actions p {
+  background: #E5F2FF;
+  font-family: "Exo 2";
+  border-radius: 10px;
+  padding: 0 4px;
+  color: gray;
 }
 
 .item__actions button {
   border: none;
   background: rgba(0, 0, 0, 0);
+}
+
+.edit {
+  display: flex;
+  gap: 10px;
+}
+
+.edit button {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.edit button:nth-child(1) {
+  background: #14A35E;
+}
+
+.edit button:nth-child(2) {
+  background: gray;
 }
 
 .popup__wrapper {
